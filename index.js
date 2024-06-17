@@ -44,6 +44,7 @@ function refreshCalculator() {
   Ans = 0
   firstNumber = 0
   secondNumber = 0
+  counter.pop()
   arr =[]
   upperSection.innerText = 0
   lowerSection.innerText = 0 
@@ -52,6 +53,7 @@ function refreshCalculator() {
 function addNumberToArray(e) {
   arr.push(e.target.innerText);
   firstNumber = parseFloat(arr.join(""));
+  lowerSection.innerText = 0
 }
 
 function getOpIndex(e) {
