@@ -73,16 +73,16 @@ function calculation(e) {
   secondNumber = parseFloat(secondNumberArr.join(""));
   if (arr[index] === "+") {
     Ans = firstNumber + secondNumber;
-    Ans = Ans.toFixed(0);
+    Ans = Ans.toFixed(1);
   } else if (arr[index] === "-") {
     Ans = firstNumber - secondNumber;
-    Ans = Ans.toFixed(0);
+    Ans = Ans.toFixed(1);
   } else if (arr[index] === "/") {
     Ans = firstNumber / secondNumber;
     Ans = Ans.toFixed(1);
   } else if (arr[index] === "*") {
     Ans = firstNumber * secondNumber;
-    Ans = Ans.toFixed(0);
+    Ans = Ans.toFixed(1);
   }
   lowerSection.innerText = Ans;
   arr.length = 0;
@@ -98,16 +98,16 @@ function prematureCalculation(e) {
   counter.splice(0, 1);
   if (arr[index] === "+") {
     Ans = firstNumber + secondNumber;
-    Ans = Ans.toFixed(0);
+    Ans = Ans.toFixed(1);
   } else if (arr[index] === "-") {
     Ans = firstNumber - secondNumber;
-    Ans = Ans.toFixed(0);
+    Ans = Ans.toFixed(1);
   } else if (arr[index] === "/") {
     Ans = firstNumber / secondNumber;
     Ans = Ans.toFixed(1);
   } else if (arr[index] === "*") {
     Ans = firstNumber * secondNumber;
-    Ans = Ans.toFixed(0);
+    Ans = Ans.toFixed(1);
   }
     arrV2 = arr.splice(0, counter[1] - 1);
     secondNumberArr = secondNumberArr.splice(0, secondNumberArr.length);
