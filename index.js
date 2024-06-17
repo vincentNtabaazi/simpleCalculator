@@ -36,6 +36,8 @@ let Ans = 0;
 let arr = [];
 let arrV2 = [];
 let counter = []
+upperSection.innerText = 0
+lowerSection.innerText = 0 
 
 // Functions
 function refreshCalculator() {
@@ -43,8 +45,8 @@ function refreshCalculator() {
   firstNumber = 0
   secondNumber = 0
   arr =[]
-  screenUpperSection = 0
-  upperSection.innerText = screenUpperSection
+  upperSection.innerText = 0
+  lowerSection.innerText = 0 
 }
 
 function addNumberToArray(e) {
@@ -122,9 +124,7 @@ function prematureCalculation(e) {
     }
   } else if (arr[index] === "*") {
     Ans = firstNumber * secondNumber;
-    if (Ans % 1 !== 0) {
-      Ans = Ans.toFixed(1);
-    }
+    Ans = Ans.toFixed(1);
   }
     arrV2 = arr.splice(0, counter[1] - 1);
     secondNumberArr = secondNumberArr.splice(0, secondNumberArr.length);
